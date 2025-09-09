@@ -1,0 +1,44 @@
+{
+  "version": 2,
+  "functions": {
+    "api/candidates.js": {
+      "runtime": "@vercel/node"
+    },
+    "api/export.js": {
+      "runtime": "@vercel/node"
+    },
+    "api/bulk-update.js": {
+      "runtime": "@vercel/node"
+    }
+  },
+  "routes": [
+    {
+      "src": "/api/candidates/bulk-update",
+      "dest": "/api/bulk-update.js"
+    },
+    {
+      "src": "/api/candidates/(.*)",
+      "dest": "/api/candidates.js"
+    },
+    {
+      "src": "/api/candidates",
+      "dest": "/api/candidates.js"
+    },
+    {
+      "src": "/api/export",
+      "dest": "/api/export.js"
+    },
+    {
+      "src": "/",
+      "dest": "/public/index.html"
+    },
+    {
+      "src": "/public/(.*)",
+      "dest": "/public/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/public/$1"
+    }
+  ]
+}
