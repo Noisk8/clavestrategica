@@ -1,0 +1,166 @@
+{
+  "candidates": [
+    {
+      "id": 11,
+      "name": "Alejandro Jiménez Salazar",
+      "process_status": "Pendiente",
+      "invitation_status": "Pendiente",
+      "notes": "",
+      "updated_at": "2025-09-09 03:36:33"
+    },
+    {
+      "id": 1,
+      "name": "Camila Jiménez Sáez",
+      "process_status": "Pendiente",
+      "invitation_status": "Pendiente",
+      "notes": "",
+      "updated_at": "2025-09-09 03:36:33"
+    },
+    {
+      "id": 3,
+      "name": "Daniela Eusse Molina",
+      "process_status": "Pendiente",
+      "invitation_status": "Pendiente",
+      "notes": "",
+      "updated_at": "2025-09-09 03:36:33"
+    },
+    {
+      "id": 20,
+      "name": "Dina Margarita Linero Ariza",
+      "process_status": "No continúa",
+      "invitation_status": "Pendiente",
+      "notes": "",
+      "updated_at": "2025-09-09 03:52:58"
+    },
+    {
+      "id": 15,
+      "name": "Hernando Sánchez",
+      "process_status": "Pendiente",
+      "invitation_status": "Pendiente",
+      "notes": "",
+      "updated_at": "2025-09-09 03:36:33"
+    },
+    {
+      "id": 12,
+      "name": "Jose David Tovar Ortiz",
+      "process_status": "Pendiente",
+      "invitation_status": "Pendiente",
+      "notes": "",
+      "updated_at": "2025-09-09 03:36:33"
+    },
+    {
+      "id": 4,
+      "name": "Juan Camilo Correa Díaz",
+      "process_status": "Pendiente",
+      "invitation_status": "Pendiente",
+      "notes": "",
+      "updated_at": "2025-09-09 03:36:33"
+    },
+    {
+      "id": 14,
+      "name": "Juliana Soto Córdoba",
+      "process_status": "Pendiente",
+      "invitation_status": "Pendiente",
+      "notes": "",
+      "updated_at": "2025-09-09 03:36:33"
+    },
+    {
+      "id": 10,
+      "name": "Julián Mazo Zapata",
+      "process_status": "Pendiente",
+      "invitation_status": "Pendiente",
+      "notes": "",
+      "updated_at": "2025-09-09 03:36:33"
+    },
+    {
+      "id": 8,
+      "name": "Laura Cristina Henao",
+      "process_status": "Pendiente",
+      "invitation_status": "Pendiente",
+      "notes": "",
+      "updated_at": "2025-09-09 03:36:33"
+    },
+    {
+      "id": 19,
+      "name": "Laura Velásquez Hernández",
+      "process_status": "Pendiente",
+      "invitation_status": "Pendiente",
+      "notes": "",
+      "updated_at": "2025-09-09 03:36:33"
+    },
+    {
+      "id": 2,
+      "name": "Lina Paola Delgadillo Murcia",
+      "process_status": "Pendiente",
+      "invitation_status": "Pendiente",
+      "notes": "",
+      "updated_at": "2025-09-09 03:36:33"
+    },
+    {
+      "id": 9,
+      "name": "Martha Liliana Suárez García",
+      "process_status": "Pendiente",
+      "invitation_status": "Pendiente",
+      "notes": "",
+      "updated_at": "2025-09-09 03:36:33"
+    },
+    {
+      "id": 7,
+      "name": "Melissa Zuluaga Soto",
+      "process_status": "Pendiente",
+      "invitation_status": "Pendiente",
+      "notes": "",
+      "updated_at": "2025-09-09 03:36:33"
+    },
+    {
+      "id": 6,
+      "name": "Sandra Emilia Arroyave Sampedro",
+      "process_status": "Pendiente",
+      "invitation_status": "Pendiente",
+      "notes": "",
+      "updated_at": "2025-09-09 03:36:33"
+    },
+    {
+      "id": 13,
+      "name": "Stefan Quiroga Fajardo",
+      "process_status": "Pendiente",
+      "invitation_status": "Pendiente",
+      "notes": "",
+      "updated_at": "2025-09-09 03:36:33"
+    },
+    {
+      "id": 5,
+      "name": "Susana Botero Rendón",
+      "process_status": "Pendiente",
+      "invitation_status": "Pendiente",
+      "notes": "",
+      "updated_at": "2025-09-09 03:36:33"
+    },
+    {
+      "id": 18,
+      "name": "Valentina Acosta",
+      "process_status": "Pendiente",
+      "invitation_status": "Pendiente",
+      "notes": "",
+      "updated_at": "2025-09-09 03:36:33"
+    },
+    {
+      "id": 16,
+      "name": "Xenia Paola Arellano Tamayo",
+      "process_status": "Pendiente",
+      "invitation_status": "Pendiente",
+      "notes": "",
+      "updated_at": "2025-09-09 03:36:33"
+    },
+    {
+      "id": 17,
+      "name": "Ximena Alvarez Castro",
+      "process_status": "Pendiente",
+      "invitation_status": "Pendiente",
+      "notes": "",
+      "updated_at": "2025-09-09 03:36:33"
+    }
+  ],
+  "exportDate": "2025-09-09T04:16:59.372Z",
+  "totalRecords": 20
+}

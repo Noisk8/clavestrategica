@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coordinador(a) Alianzas y desarrollo de negocios - Versión 8</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-4px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); }
+        .status-badge { animation: pulse 2s infinite; }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.8; } }
+        .editable-field { border: 1px solid #e5e7eb; border-radius: 6px; padding: 8px; margin: 4px 0; }
+        .editable-field:focus { outline: none; border-color: #3b82f6; box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1); }
+        .status-active { background-color: #dcfce7; color: #166534; }
+        .status-inactive { background-color: #fef2f2; color: #991b1b; }
+        .status-pending { background-color: #fef3c7; color: #92400e; }
+        .loading { opacity: 0.6; pointer-events: none; }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <!-- Header -->
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-gray-800 mb-4">Coordinador(a) Alianzas y desarrollo de negocios</h1>
+            <p class="text-lg text-gray-600">Sistema de gestión de perfiles profesionales - Versión 8</p>
+            <div class="mt-6 flex justify-center space-x-4">
+                <div class="bg-white px-4 py-2 rounded-full shadow-sm">
+                    <span class="text-sm font-medium text-gray-700">Total: <span class="text-blue-600 font-bold">20 candidatos</span></span>
+                </div>
+                <div class="bg-green-100 px-4 py-2 rounded-full shadow-sm">
+                    <span class="text-sm font-medium text-green-700">Documentos: <span class="text-green-600 font-bold">20/20</span></span>
+                </div>
+                <div class="flex space-x-2">
+                    <button onclick="exportData()" class="bg-blue-600 text-white px-4 py-2 rounded-full text-sm hover:bg-blue-700 transition-colors">
+                        📥 Exportar Datos
+                    </button>
+                    <label class="bg-gray-600 text-white px-4 py-2 rounded-full text-sm hover:bg-gray-700 transition-colors cursor-pointer">
+                        📤 Importar Datos
+                        <input type="file" accept=".json" onchange="importData(event)" class="hidden">
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Loading Indicator -->
+        <div id="loadingIndicator" class="hidden fixed top-4 left-1/2 transform -translate-x-1/2 bg-blue-500 text-white px-4 py-2 rounded-lg shadow-lg z-50">
+            <div class="flex items-center space-x-2">
+                <div class="animate-spin rounded-full h-4 w-4 border-b-2 border-white"></div>
+                <span>Cargando...</span>
+            </div>
+        </div>
+
+        <!-- Search and Filter Bar -->
+        <div class="bg-white rounded-xl shadow-lg p-6 mb-8">
+            <div class="flex flex-col md:flex-row gap-4">
+                <div class="flex-1">
+                    <input type="text" id="searchInput" placeholder="Buscar por nombre, profesión, experiencia o estado del proceso..." 
+                           class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                </div>
+                <div class="flex gap-2">
+                    <select id="filterProfession" class="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500">
+                        <option value="">Todas las profesiones</option>
+                        <option value="comunicacion">Comunicación</option>
+                        <option value="relaciones">Relaciones Internacionales</option>
+                        <option value="mercadeo">Mercadeo</option>
+                        <option value="administracion">Administración</option>
+                        <option value="politica">Ciencia Política</option>
+                        <option value="publicidad">Publicidad</option>
+                        <option value="economia">Economía</option>
+                        <option value="derecho">Derecho</option>
+                        <option value="finanzas">Finanzas</option>
+                        <option value="gobierno">Gobierno</option>
+                        <option value="gestion">Gestión Pública</option>
+                        <option value="gerencia">Gerencia de Proyectos</option>
+                    </select>
+                    <select id="filterStatus" class="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500">
+                        <option value="">Todos los estados</option>
+                        <option value="Continúa">Continúa en proceso</option>
+                        <option value="No continúa">No continúa</option>
+                        <option value="Pendiente">Pendiente</option>
+                    </select>
+                    <button onclick="clearFilters()" class="px-6 py-3 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-colors">
+                        Limpiar
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Candidates Grid -->
+        <div id="candidatesGrid" class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- Los candidatos se cargarán aquí -->
+        </div>
+    </div>
+
+    <script src="api.js"></script>
+    <script src="candidates-data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
