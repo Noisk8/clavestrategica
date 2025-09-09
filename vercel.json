@@ -1,16 +1,5 @@
 {
   "version": 2,
-  "functions": {
-    "api/candidates.js": {
-      "runtime": "@vercel/node"
-    },
-    "api/export.js": {
-      "runtime": "@vercel/node"
-    },
-    "api/bulk-update.js": {
-      "runtime": "@vercel/node"
-    }
-  },
   "routes": [
     {
       "src": "/api/candidates/bulk-update",
